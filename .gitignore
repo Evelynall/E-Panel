@@ -10,6 +10,11 @@ tests/fixtures/
 tests/_shot_*.png
 tests/_icon_tray_preview.png
 
+# ---- 本地备份目录（不上传）----
+备份*/
+备份-*/
+*-备份/
+
 # ---- Python ----
 __pycache__/
 *.py[cod]
