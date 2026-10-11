@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#f5f6f8">
+<title>E 面板</title>
+<link rel="stylesheet" href="app.css">
+</head>
+<body>
+
+<div id="app" data-theme="light" data-topbar="always" data-sidebar="always">
+  <header class="appbar" id="appbar">
+    <button class="iconbtn" id="btnMenu" title="页面菜单"></button>
+    <span class="brand" id="brand">E 面板</span>
+    <button class="wsbtn" id="btnWs" title="切换工作区"></button>
+    <span class="status" id="status"><i class="dot"></i><span id="statusText">未连接</span></span>
+    <span class="spacer"></span>
+    <button class="iconbtn" id="btnTheme" title="切换主题"></button>
+    <button class="iconbtn" id="btnEdit" title="编辑布局"></button>
+    <button class="iconbtn" id="btnMore" title="更多"></button>
+  </header>
+
+  <div class="body">
+    <nav class="sidebar" id="sidebar"></nav>
+    <main class="main" id="main">
+      <div class="page" id="page"></div>
+    </main>
+  </div>
+
+  <nav class="tabbar" id="tabbar"></nav>
+
+  <button class="chrome-handle" id="chromeHandle" hidden><i class="dot"></i></button>
+  <div class="kiosk-exit" id="kioskExit" hidden></div>
+</div>
+
+<div id="modalRoot"></div>
+<div id="toastRoot"></div>
+
+<!-- 内核：注册表、存储、外壳、调度器 -->
+<script src="app.js"></script>
+
+<!-- 通道：负责「动作怎么执行」，注册后无需改内核 -->
+<script src="channels/quicker.js"></script>
+<script src="channels/reserved.js"></script>
+
+<!-- 模块：负责「卡片长什么样」，注册后无需改内核 -->
+<script src="modules/buttonGrid.js"></script>
+<script src="modules/quickSend.js"></script>
+<script src="modules/resultPanel.js"></script>
+<script src="modules/logList.js"></script>
+<script src="modules/todoList.js"></script>
+<script src="modules/musicMeta.js"></script>
+<script src="modules/musicPlayer.js"></script>
+<script src="modules/reserved.js"></script>
+</body>
+</html>

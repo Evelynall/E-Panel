@@ -1,0 +1,29 @@
+# ---- 构建产物与签名（切勿提交）----
+build/
+*.apk
+*.aab
+*.keystore
+*.jks
+
+# ---- 测试临时产物 ----
+tests/fixtures/
+tests/_shot_*.png
+tests/_icon_tray_preview.png
+
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# ---- 日志与运行时 ----
+*.log
+music_server.log
+
+# ---- 编辑器 / 系统 ----
+.vscode/
+.idea/
+Thumbs.db
+desktop.ini
+.DS_Store
