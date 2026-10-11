@@ -75,13 +75,3 @@ EPanel/
 
 - [PLAN.md](PLAN.md) —— 开发计划、技术决策、Quicker 接口实测、打包与排障记录
 - [UI-DESIGN.md](UI-DESIGN.md) —— 界面设计说明
-
-## 开源协议
-
-本项目采用 **[GNU General Public License v3.0](LICENSE)**（GPL-3.0）授权。
-
-这是一个**强传染性（copyleft）**协议：任何人都可以自由使用、修改、分发本项目的代码，
-**但基于本项目代码产生的衍生作品，必须以同样的 GPL-3.0 协议开源，并提供完整源代码。**
-简单说 —— 用了这里的代码，你的项目也得开源。
-
-Copyright (C) 2026 Evelynal
